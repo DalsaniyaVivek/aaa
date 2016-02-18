@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view7"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="175dp"
+        android:layout_margin="5dp">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="By Date"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/vt1"
+            android:layout_marginBottom="10dp"/>
+         <TextView android:layout_height="wrap_content"
+             android:layout_width="fill_parent"
+             android:text="Choose date"
+             android:textStyle="bold"
+             android:textSize="15dp"
+             android:layout_marginBottom="10dp"/>
+            <RelativeLayout android:layout_height="50dp"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ve1"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Want to Change date?"
+                    android:id="@+id/vt2"
+                    android:onClick="setDate"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"/>
+            </RelativeLayout>
+        <Button android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:text="View"
+            android:background="#800080"
+            android:textColor="#ffffff"
+            android:id="@+id/vb1"/>
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view8"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="275dp"
+        android:layout_margin="5dp">
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="By Month"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:id="@+id/vt3"
+                android:layout_marginBottom="10dp"/>
+            <TextView android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Choose Month"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/vt4"/>
+            <RelativeLayout android:layout_height="match_parent"
+                android:layout_width="match_parent">
+                <Spinner
+                    android:id="@+id/vs1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:popupBackground="#FFFF99"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/vt5"
+                    android:textStyle="bold"
+                    android:text="Choose Year"
+                    android:layout_below="@+id/vs1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"/>
+                <Spinner
+                    android:id="@+id/vs2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:popupBackground="#FFFF99"
+                    android:layout_below="@+id/vt5"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"/>
+                <Button android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:background="#800080"
+                    android:text="View"
+                    android:textColor="#ffffff"
+                    android:id="@+id/vb2"
+                    android:layout_below="@+id/vs2"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Link for view1 full Database "
+        android:textSize="20dp"
+        android:background="#d3d3d3"
+        android:textStyle="bold"
+        android:id="@+id/vt6"
+        />
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:text="Click me!"
+        android:textSize="15dp"
+        android:layout_gravity="right"
+        android:id="@+id/vt7"
+        />
+
+    </LinearLayout>

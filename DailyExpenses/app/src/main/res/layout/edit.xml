@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    >
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view11"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="500dp"
+        android:layout_margin="5dp"
+        >
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:background="#dfffdf"
+            android:layout_margin="5dp">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Row ID"
+        android:id="@+id/id1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <EditText
+        android:layout_marginTop="3dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id2"
+        android:hint="Enter Row id"
+        android:inputType="number"
+        android:layout_marginLeft="5dp"
+        />
+     <Button android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:background="#800080"
+         android:text="fetch detail"
+         android:textColor="#ffffff"
+         android:id="@+id/temp5"
+         android:layout_marginTop="7dp"
+         android:layout_marginLeft="5dp"/>
+     <TextView android:layout_height="wrap_content"
+         android:layout_width="fill_parent"
+         android:id="@+id/id3"
+         android:textSize="17dp"
+         android:textStyle="bold"
+         android:text="Get id with the help of following link"
+         android:background="#d3d3d3"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="5dp"/>
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/imageButton"
+                android:src="@drawable/lupa"
+                android:layout_marginLeft="50dp"/>
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:id="@+id/name1"
+                android:layout_marginLeft="5dp"
+                />
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Name according to Id"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Price"
+        android:id="@+id/price1"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:hint="Price according to Id"
+        android:layout_marginLeft="5dp"
+        />
+
+            <RelativeLayout android:layout_height="50dp"
+                android:layout_width="fill_parent">
+                <EditText
+                    android:layout_marginTop="7dp"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/temp3"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Click to Change date?"
+                    android:onClick="setDate"
+                    android:id="@+id/temp4"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"/>
+
+
+            </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="7dp"
+        android:layout_width="fill_parent"
+        android:background="#800080"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:id="@+id/button"
+        android:textColor="#ffffff"
+        android:enabled="false"
+        android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+        </android.support.v7.widget.CardView>
+</LinearLayout>

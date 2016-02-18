@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dfffdf">
+    <include layout="@layout/toolbar" />
+<ScrollView
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:fillViewport="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id="@+id/tb1">
+        <TableRow>
+            <TextView android:layout_height="fill_parent" android:layout_width="fill_parent" android:text="Date" android:layout_weight="1" android:background="@drawable/border"/>
+            <TextView android:layout_height="fill_parent" android:layout_width="fill_parent" android:text="Name" android:layout_weight="1" android:background="@drawable/border"/>
+            <TextView android:layout_height="fill_parent" android:layout_width="fill_parent" android:text="Price" android:layout_weight="1" android:background="@drawable/border"/>
+        </TableRow>
+    </TableLayout>
+    <TextView android:text="get info from db" android:id="@+id/xxx" android:layout_height="fill_parent" android:layout_width="fill_parent"/>
+    </LinearLayout>
+</ScrollView>
+    </LinearLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:fillViewport="false"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view5"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="167dp"
+        android:layout_margin="5dp"
+            >
+
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical"
+            >
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Find by Id"
+            android:id="@+id/ftextView2"
+            android:background="#d3d3d3"/>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:divider="?android:dividerHorizontal"
+                android:layout_margin="5dp">
+             </LinearLayout>
+            <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Row id"
+        android:textSize="15dp"
+                android:layout_marginBottom="10dp"
+        android:id="@+id/ftextView3" />
+
+        <EditText
+        android:textSize="15dp"
+        android:hint="Enter Id here"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:id="@+id/feditText"
+        android:inputType="number"
+        android:layout_marginBottom="20dp"    />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Find"
+                android:textColor="#ffffff"
+                android:background="#800080"
+                android:id="@+id/fbutton1"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view6"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="165dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Find by Name"
+                android:id="@+id/ftextView4"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:background="#d3d3d3"
+                />
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:divider="?android:dividerHorizontal"
+                android:layout_margin="5dp">
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:id="@+id/ftextView5"
+                android:layout_marginBottom="10dp"
+                android:textSize="15dp"/>
+
+            <EditText
+                android:hint="Enter your product here"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:id="@+id/feditText2"
+                android:layout_marginBottom="15dp"
+                android:textSize="15dp"
+                />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Find"
+                android:textColor="#ffffff"
+                android:background="#800080"
+                android:id="@+id/fbutton2"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view7"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="165dp"
+        android:layout_margin="5dp">
+
+        <LinearLayout android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Find by Price"
+                android:id="@+id/ftextView6"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="#d3d3d3"/>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:divider="?android:dividerHorizontal"
+                android:layout_margin="5dp">
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/ftextView7"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:hint="Enter your Price here"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:id="@+id/feditText3"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Find"
+                android:textColor="#ffffff"
+                android:background="#800080"
+                android:id="@+id/fbutton3"
+                android:clickable="true"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+       </ScrollView>
+    </LinearLayout>
